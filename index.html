@@ -14,9 +14,31 @@
         <title>Casa Criativa</title>
          <style>
             body {
-                
+                background-color: #e5e5e5e5;
+                color: #25282b;
+                text-align: center;
+            }
+            button{
+                color: #ff5e84;
+                border: none;
+                font-weight: bold;
+                background: none;
             }
 
+            #fat {
+                color: white;
+                background: #ff5e84;
+            }
+
+            .footer a {
+                color: #25282b;
+                font-weight: bold; 
+                /*font-size: 20px;*/ 
+            }
+            .hide {
+                display: none;
+
+            }
          </style>
 
     </head>
@@ -34,27 +56,25 @@
         </p>
 
         <button>+ Adicionar Ideia</button>
-        <button> Ver </button>
+        <button id="fat"> Ver Ideias </button>
         
-        <p id="footer">
+        <p class="footer">
             Com ❤ <a href="http://rocketseat.com.br">Rocketseat</a>
         </p>
-        
-        <p>
-            Diversos textos:  
-        </p>
 
-        <p>
-            - item 1: cascão     
-        </p>
+        <script>
 
-         <p>
-          - item 2: R$ 10,00   
-         </p>
+            document 
+                .querySelector("#fat")
+                .addEventListener("click",function(){
+                    document
+                        .querySelector("p.footer")
+                        .classList
+                        .toggle("hide")
 
-         <p>
-          - item 3: 35m³   
-         </p>
+                })
+
+        </script>
          
     </body>
 
